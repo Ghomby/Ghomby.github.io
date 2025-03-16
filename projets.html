@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets - Ghomby Dior Olsen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Section En-tête -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">GDO</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projects">
+        <h2>Mes Projets</h2>
+        <div class="projects-grid">
+            <!-- Projet E-commerce -->
+            <div class="project-card" onclick="openModal('modal-ecommerce')">
+                <div class="project-images">
+                    <img src="e-commerce.jpg" alt="Projet E-commerce">
+                    <img src="e-commerce (2).jpg" alt="Détails du projet E-commerce">
+                </div>
+                <div class="project-info">
+                    <h3>Plateforme E-commerce</h3>
+                    <p>Une plateforme de commerce électronique moderne avec gestion des utilisateurs et des produits.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet Maison Connectée -->
+            <div class="project-card" onclick="openModal('modal-maison')">
+                <div class="project-images">
+                    <img src="maison.jpg" alt="Projet Maison Connectée">
+                </div>
+                <div class="project-info">
+                    <h3>Système Maison Connectée</h3>
+                    <p>Interface de contrôle domotique avec simulation réseau avancée.</p>
+                    <div class="project-tags">
+                        <span>IoT</span>
+                        <span>Réseaux</span>
+                        <span>Interface</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet Réseau Social -->
+            <div class="project-card" onclick="openModal('modal-social')">
+                <div class="project-images">
+                    <img src="PJ1.jpg" alt="Réseau Social">
+                    <img src="PJ1(2).jpg" alt="Détails du Réseau Social">
+                </div>
+                <div class="project-info">
+                    <h3>Réseau Social</h3>
+                    <p>Plateforme sociale interactive avec fonctionnalités de partage et gestion de contenu avancée.</p>
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet Pages Web Dynamiques -->
+            <div class="project-card" onclick="openModal('modal-web')">
+                <div class="project-images">
+                    <img src="web.jpg" alt="Pages Web Dynamiques">
+                    <img src="web2.jpg" alt="Détails Pages Web Dynamiques">
+                    <img src="PJ3.jpg" alt="Fonctionnalités Pages Web">
+                </div>
+                <div class="project-info">
+                    <h3>Pages Web Dynamiques</h3>
+                    <p>Création de pages web interactives et dynamiques avec des fonctionnalités avancées.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                        <span>JavaScript</span>
+                        <span>Laravel</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet Gestion Scolaire -->
+            <div class="project-card" onclick="openModal('modal-scolaire')">
+                <div class="project-images">
+                    <img src="PJ5.jpg" alt="Application Gestion Scolaire">
+                </div>
+                <div class="project-info">
+                    <h3>Gestion Comptable Scolaire</h3>
+                    <p>Application de gestion de la comptabilité d'un complexe scolaire avec suivi des paiements et reporting.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>MySQL</span>
+                        <span>Reporting</span>
+                        <span>Comptabilité</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <p>&copy; 2024 Ghomby Dior Olsen. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="modal-ecommerce">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-ecommerce')">&times;</span>
+            <h2>Plateforme E-commerce</h2>
+            <div class="modal-images">
+                <img src="e-commerce.jpg" alt="Projet E-commerce">
+                <img src="e-commerce (2).jpg" alt="Détails du projet E-commerce">
+            </div>
+            <div class="modal-description">
+                <h3>Description détaillée</h3>
+                <p>Une plateforme de commerce électronique moderne avec gestion des utilisateurs et des produits. Cette application permet aux utilisateurs de parcourir les produits, gérer leur panier et effectuer des achats en ligne de manière sécurisée.</p>
+                <h3>Technologies utilisées</h3>
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>PHP</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-maison">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-maison')">&times;</span>
+            <h2>Système Maison Connectée</h2>
+            <div class="modal-images">
+                <img src="maison.jpg" alt="Projet Maison Connectée">
+            </div>
+            <div class="modal-description">
+                <h3>Description détaillée</h3>
+                <p>Interface de contrôle domotique permettant la gestion intelligente de la maison. Le système permet de contrôler l'éclairage, la température, la sécurité et d'autres aspects de l'habitat via une interface intuitive.</p>
+                <h3>Technologies utilisées</h3>
+                <div class="project-tags">
+                    <span>IoT</span>
+                    <span>Réseaux</span>
+                    <span>Interface</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-social">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-social')">&times;</span>
+            <h2>Réseau Social</h2>
+            <div class="modal-images">
+                <img src="PJ1.jpg" alt="Réseau Social">
+                <img src="PJ1(2).jpg" alt="Détails du Réseau Social">
+            </div>
+            <div class="modal-description">
+                <h3>Description détaillée</h3>
+                <p>Plateforme sociale interactive permettant aux utilisateurs de partager du contenu, interagir avec d'autres utilisateurs et gérer leur profil. L'application inclut des fonctionnalités de messagerie, de partage de médias et de gestion de communautés.</p>
+                <h3>Technologies utilisées</h3>
+                <div class="project-tags">
+                    <span>PHP</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-web">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-web')">&times;</span>
+            <h2>Pages Web Dynamiques</h2>
+            <div class="modal-images">
+                <img src="web.jpg" alt="Pages Web Dynamiques">
+                <img src="web2.jpg" alt="Détails Pages Web Dynamiques">
+                <img src="PJ3.jpg" alt="Fonctionnalités Pages Web">
+            </div>
+            <div class="modal-description">
+                <h3>Description détaillée</h3>
+                <p>Création de pages web interactives et dynamiques offrant une expérience utilisateur riche. Le projet inclut des animations fluides, des interactions en temps réel et une adaptation parfaite à tous les appareils.</p>
+                <h3>Technologies utilisées</h3>
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>PHP</span>
+                    <span>JavaScript</span>
+                    <span>Laravel</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-scolaire">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-scolaire')">&times;</span>
+            <h2>Gestion Comptable Scolaire</h2>
+            <div class="modal-images">
+                <img src="PJ5.jpg" alt="Application Gestion Scolaire">
+            </div>
+            <div class="modal-description">
+                <h3>Description détaillée</h3>
+                <p>Application complète de gestion comptable pour établissements scolaires. Elle permet le suivi des paiements, la génération de rapports financiers, la gestion des frais de scolarité et l'analyse des données comptables.</p>
+                <h3>Technologies utilisées</h3>
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>MySQL</span>
+                    <span>Reporting</span>
+                    <span>Comptabilité</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "flex";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        // Fermer le modal si on clique en dehors
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+
+        // Fermer le modal avec la touche Echap
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                const modals = document.getElementsByClassName('modal');
+                for (let modal of modals) {
+                    modal.style.display = "none";
+                }
+                document.body.style.overflow = "auto";
+            }
+        });
+    </script>
+</body>
+</html> 
